@@ -1,0 +1,194 @@
+li {
+    list-style-type: none ;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+/** Горизонтальное меню **/
+
+
+
+.menu-item a {
+    text-decoration: none;
+    color: #D2691E;
+}
+
+.menu, .submenu, .subsubmenu, .submenu-second {
+    width: 120px;
+    background-color: #00BFFF;
+    padding: 3px;
+    border-radius: 4px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 3px dotted blue;
+}
+
+.menu-item {
+    position: relative;
+    background-color: #00FF00;
+    padding: 3px;
+    margin: 3px;
+    border-radius: 4px;
+    transition: 1s;
+}
+
+.menu-item:hover {
+    background-color: grey;
+    cursor: pointer;
+}
+
+.menu-item a {
+    display: block;
+    text-align: center;
+}
+/**доп меню **/
+
+.submenu {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    top: -5px;
+    left: 120px;
+    transition: 1s;
+}
+
+.menu-item:hover>.submenu {
+    visibility: visible;
+    z-index: 1;
+    left: 120px;
+    top: -5px;
+    opacity: 1;
+    transition: 1s;
+}
+
+.subsubmenu {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    top: -5px;
+    left: 118px;
+    transition: 1s;
+}
+
+.menu-item:hover>.subsubmenu {
+    visibility: visible;
+    z-index: 1;
+    left: 118px;
+    top: -5px;
+    opacity: 1;
+    transition: 1s;
+}
+
+.submenu-second {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    top: -5px;
+    left: 120px;
+    transition: 1s;
+}
+
+.menu-item:hover>.submenu-second {
+    visibility: visible;
+    z-index: 1;
+    left: 120px;
+    top: -5px;
+    opacity: 1;
+    transition: 1s;
+}
+
+/** Вертикальное меню **/
+.menu-two .menu-top {
+    display: inline-block;
+}
+
+.menu-top a {
+    text-decoration: none;
+    color: #A52A2A;
+}
+.menu-two, .bedmenu, .bedsubmenu, .bedmenu-two {
+    width: 430px;
+    background-color: #8B008B;
+    border-radius: 4px;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 3px dotted blue;
+}
+.menu-top {
+    position: relative;
+    background-color: #FFD700;
+    padding: 3px;
+    margin: 3px;
+    border-radius: 4px;
+    transition: 1s;
+}
+
+.menu-top:hover {
+    background-color: greenyellow;
+    cursor: pointer;
+}
+
+.menu-top a {
+    display: block;
+    text-align: center;
+}
+
+.bedmenu {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    bottom: -56px;
+    left: -20px;
+    width: 250px;
+    transition: 1s;
+}
+
+.menu-top:hover>.bedmenu {
+    visibility: visible;
+    z-index: 1;
+    left: -20px;
+    bottom: -56px;
+    opacity: 1;
+    transition: 1s;
+}
+
+.bedsubmenu {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    bottom: -56px;
+    left: -20px;
+    width: 270px;
+    transition: 1s;
+}
+
+.menu-top:hover>.bedsubmenu {
+    visibility: visible;
+    z-index: 1;
+    left: -20px;
+    bottom: -56px;
+    opacity: 1;
+    transition: 1s;
+}
+.bedmenu-two {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    bottom: -56px;
+    left: -20px;
+    width: 270px;
+    transition: 1s;
+}
+
+.menu-top:hover>.bedmenu-two {
+    visibility: visible;
+    z-index: 1;
+    left: -20px;
+    bottom: -56px;
+    opacity: 1;
+    transition: 1s;
+}
